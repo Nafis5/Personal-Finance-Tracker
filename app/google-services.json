@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "644116021765",
+    "project_id": "personal-budget-app-529e9",
+    "storage_bucket": "personal-budget-app-529e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644116021765:android:04bb25bf293479e288526c",
+        "android_client_info": {
+          "package_name": "com.budget.personalfinancetracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644116021765-105mp8gvvd8sa54ldm6e357020gn110k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.budget.personalfinancetracking",
+            "certificate_hash": "ddcad3ce4de4b1caff7102e4a0ef4c8c3fb7bc97"
+          }
+        },
+        {
+          "client_id": "644116021765-8eb6t8s232pq2ucf605ilblsfrsqu7k5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTmC_jpcRNoLewNnp7taxzM-_2h8-AzqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644116021765-8eb6t8s232pq2ucf605ilblsfrsqu7k5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
