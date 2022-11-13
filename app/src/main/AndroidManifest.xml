@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.budget.personalfinancetracking">
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/play_logo"
+        android:label="@string/app_name"
+
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PersonalFinanceTracking">
+        <activity android:name="com.budget.personalfinancetracking.HistoryActivity"></activity>
+        <activity android:name="com.budget.personalfinancetracking.AccountActivity" />
+        <activity android:name="com.budget.personalfinancetracking.MonthlyAnalyticsActivity" />
+        <activity android:name="com.budget.personalfinancetracking.WeeklyAnalyticsActivity" />
+        <activity android:name="com.budget.personalfinancetracking.DailyAnaylyticsActivity" />
+        <activity android:name="com.budget.personalfinancetracking.ChooseAnalyticActivity" />
+        <activity android:name="com.budget.personalfinancetracking.WeekSpending" />
+        <activity android:name="com.budget.personalfinancetracking.TodaySpendingsActivity" />
+        <activity android:name="com.budget.personalfinancetracking.BudgetActivity" />
+        <activity android:name="com.budget.personalfinancetracking.MainActivity" />
+        <activity android:name="com.budget.personalfinancetracking.RegistrationActivity" />
+        <activity android:name="com.budget.personalfinancetracking.LoginActivity" />
+        <activity android:name="com.budget.personalfinancetracking.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
