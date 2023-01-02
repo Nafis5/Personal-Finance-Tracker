@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".DailyAnaylyticsActivity"
-    android:background="@color/titlecolor"
+    android:background="@color/BackGroundcolor2"
     >
 
     <LinearLayout

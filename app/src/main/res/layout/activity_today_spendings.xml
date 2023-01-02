@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".TodaySpendingsActivity"
-    android:background="@color/titlecolor"
+    android:background="@color/BackGroundcolor2"
     >
 
 

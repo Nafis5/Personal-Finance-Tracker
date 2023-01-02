@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".BudgetActivity"
-    android:background="@color/titlecolor"
+    android:background="@color/BackGroundcolor2"
 
     >
 
@@ -36,7 +36,7 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
+        android:background="@color/BackGroundcolor2"
         >
 
         <androidx.recyclerview.widget.RecyclerView

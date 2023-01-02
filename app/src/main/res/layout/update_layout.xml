@@ -5,7 +5,7 @@
     android:layout_margin="10dp"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@color/titlecolor"
+    android:background="@color/BackGroundcolor2"
     >
 
     <TextView
@@ -14,7 +14,9 @@
         android:layout_marginTop="5dp"
         android:text="update this item?"
         android:gravity="center"
-        android:textColor="#000"/>
+        android:textColor="#000"
+        android:background="@color/BackGroundcolor2"
+        />
 
     <TextView
         android:id="@+id/itemName"
@@ -24,7 +26,10 @@
         android:textColor="#000"
         android:gravity="center"
         android:textStyle="bold"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+
+
+        />
 
     <EditText
         android:layout_width="match_parent"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/titlecolor"
+    android:background="@color/BackGroundcolor2"
     tools:context=".ChooseAnalyticActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -29,7 +29,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
         app:cardElevation="8dp"
-        android:background="#fff"
+        app:cardBackgroundColor="@color/BackGroundcolor2"
         android:onClick="goToTodayAnaylytics"
         >
         <LinearLayout
@@ -66,7 +66,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
         app:cardElevation="8dp"
-        android:background="#fff"
+        app:cardBackgroundColor="@color/BackGroundcolor2"
         android:onClick="goTOWeekAnalytics"
         >
         <LinearLayout
@@ -103,7 +103,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
         app:cardElevation="8dp"
-        android:background="#fff"
+        app:cardBackgroundColor="@color/BackGroundcolor2"
 
         android:onClick="goToMOnthlyAnalytics"
 

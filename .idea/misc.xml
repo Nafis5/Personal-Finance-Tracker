@@ -3,14 +3,37 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/drawable/boarder_black.xml" value="0.1915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/drawable/borders.xml" value="0.1915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/drawable/buttons.xml" value="0.1915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/drawable/ic_add.xml" value="0.1915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/drawable/ic_analytics.xml" value="0.1915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/drawable/ic_education.xml" value="0.1915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/drawable/ic_entertainment.xml" value="0.1915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/drawable/ic_food.xml" value="0.1915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/drawable/ic_more.xml" value="0.1915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/drawable/ic_person.xml" value="0.1915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/drawable/ic_person_account.xml" value="0.1915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/drawable/ic_transport.xml" value="0.1915" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/activity_account.xml" value="0.1526268115942029" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/activity_budget.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/activity_choose_analytic.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/activity_daily_anaylytics.xml" value="0.1526268115942029" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/activity_history.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/activity_monthly_analytics.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/activity_registration.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/activity_today_spendings.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/activity_week_spending.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/activity_weekly_analytics.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/custom_spinner.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/input_layout.xml" value="0.19957081545064378" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/retrieve_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/layout/update_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PersonalFinanceTracking/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
       </map>
     </option>

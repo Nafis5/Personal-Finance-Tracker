@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/titlecolor"
+    android:background="@color/BackGroundcolor2"
     tools:context=".MainActivity"
 
     >
@@ -12,10 +12,10 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#5ee065"
+
         android:id="@+id/toolbar"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        android:background="#5ee065"
         android:elevation="4dp">
 
     </androidx.appcompat.widget.Toolbar>
@@ -171,7 +171,9 @@
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:background="@color/BackGroundcolor2"
+            >
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/homeBtn"
@@ -185,7 +187,8 @@
                 android:layout_margin="8dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp"
-                android:background="#fff"
+
+                app:cardBackgroundColor="@color/BackGroundcolor2"
                 android:onClick="goToBudget"
                 >
                 <LinearLayout
@@ -223,7 +226,7 @@
                 android:layout_margin="8dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp"
-                android:background="#fff"
+                app:cardBackgroundColor="@color/BackGroundcolor2"
                 android:onClick="goToTodaySpending"
                 >
                 <LinearLayout
@@ -261,7 +264,7 @@
                 android:layout_margin="8dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp"
-                android:background="#fff"
+                app:cardBackgroundColor="@color/BackGroundcolor2"
                 android:onClick="goToWeek"
                 >
                 <LinearLayout
@@ -299,7 +302,7 @@
                 android:layout_margin="8dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp"
-                android:background="#fff"
+                app:cardBackgroundColor="@color/BackGroundcolor2"
                 android:onClick="goToMonth"
                 >
                 <LinearLayout
@@ -337,7 +340,7 @@
                 android:layout_margin="8dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp"
-                android:background="#fff"
+                app:cardBackgroundColor="@color/BackGroundcolor2"
                 android:onClick="goToAnalytics"
                 >
                 <LinearLayout
@@ -374,7 +377,7 @@
                 android:layout_margin="8dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp"
-                android:background="#fff"
+                app:cardBackgroundColor="@color/BackGroundcolor2"
                 android:onClick="goToHistory"
                 >
                 <LinearLayout
