@@ -14,7 +14,7 @@
         android:layout_height="?attr/actionBarSize"
 
         android:id="@+id/toolbar"
-
+        app:titleTextColor="@color/white"
         android:background="#5ee065"
         android:elevation="4dp">
 
