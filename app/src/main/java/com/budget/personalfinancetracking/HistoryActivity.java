@@ -46,7 +46,7 @@ public class HistoryActivity extends AppCompatActivity implements DatePickerDial
         setContentView(R.layout.activity_history);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Personal Finance Tracker");
+        getSupportActionBar().setTitle("BudgetMan");
         search = findViewById(R.id.search);
         historyTotalAmountSpent = findViewById(R.id.historyTotalAmountSpent);
 

@@ -759,6 +759,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
                     float traRatio;
                     if (snapshot.hasChild("weekTransRatio")){
                         traRatio = Integer.parseInt(snapshot.child("weekTransRatio").getValue().toString());
+                        traRatio=(float)( Math.round(traRatio * 10) / 10.0 );
                     }else {
                         traRatio=0;
                     }
@@ -766,6 +767,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
                     float foodRatio;
                     if (snapshot.hasChild("weekFoodRatio")){
                         foodRatio = Integer.parseInt(snapshot.child("weekFoodRatio").getValue().toString());
+                        foodRatio=(float)( Math.round(foodRatio * 10) / 10.0 );
                     }else {
                         foodRatio = 0;
                     }
@@ -773,6 +775,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
                     float houseRatio;
                     if (snapshot.hasChild("weekHouseRatio")){
                         houseRatio = Integer.parseInt(snapshot.child("weekHouseRatio").getValue().toString());
+                        houseRatio=(float)( Math.round(houseRatio * 10) / 10.0 );
                     }else {
                         houseRatio = 0;
                     }
@@ -780,6 +783,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
                     float entRatio;
                     if (snapshot.hasChild("weekEntRatio")){
                         entRatio= Integer.parseInt(snapshot.child("weekEntRatio").getValue().toString());
+                        entRatio=(float)( Math.round(entRatio * 10) / 10.0 );
                     }else {
                         entRatio = 0;
                     }
@@ -787,6 +791,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
                     float eduRatio;
                     if (snapshot.hasChild("weekEduRatio")){
                         eduRatio= Integer.parseInt(snapshot.child("weekEduRatio").getValue().toString());
+                        eduRatio=(float)( Math.round(eduRatio * 10) / 10.0 );
                     }else {
                         eduRatio=0;
                     }
@@ -794,6 +799,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
                     float chaRatio;
                     if (snapshot.hasChild("weekCharRatio")){
                         chaRatio = Integer.parseInt(snapshot.child("weekCharRatio").getValue().toString());
+                        chaRatio=(float)( Math.round(chaRatio * 10) / 10.0 );
                     }else {
                         chaRatio = 0;
                     }
@@ -801,6 +807,8 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
                     float appRatio;
                     if (snapshot.hasChild("weekAppRatio")){
                         appRatio = Integer.parseInt(snapshot.child("weekAppRatio").getValue().toString());
+                        appRatio=(float)( Math.round(appRatio * 10) / 10.0 );
+
                     }else {
                         appRatio =0;
                     }
@@ -808,6 +816,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
                     float heaRatio;
                     if (snapshot.hasChild("weekHealthRatio")){
                         heaRatio = Integer.parseInt(snapshot.child("weekHealthRatio").getValue().toString());
+                        heaRatio=(float)( Math.round(heaRatio * 10) / 10.0 );
                     }else {
                         heaRatio=0;
                     }
@@ -815,6 +824,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
                     float perRatio;
                     if (snapshot.hasChild("weekPerRatio")){
                         perRatio = Integer.parseInt(snapshot.child("weekPerRatio").getValue().toString());
+                        perRatio=(float)( Math.round(perRatio * 10) / 10.0 );
                     }else {
                         perRatio = 0;
                     }
@@ -822,6 +832,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
                     float othRatio;
                     if (snapshot.hasChild("weekOtherRatio")){
                         othRatio = Integer.parseInt(snapshot.child("weekOtherRatio").getValue().toString());
+                        othRatio=(float)( Math.round(othRatio * 10) / 10.0 );
                     }else {
                         othRatio=0;
                     }
@@ -829,11 +840,12 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
                     float monthTotalSpentAmountRatio;
                     if (snapshot.hasChild("weeklyBudget")){
                         monthTotalSpentAmountRatio = Integer.parseInt(snapshot.child("weeklyBudget").getValue().toString());
+                        monthTotalSpentAmountRatio=(float)( Math.round(monthTotalSpentAmountRatio * 10) / 10.0 );
                     }else {
                         monthTotalSpentAmountRatio =0;
                     }
 
-                    float monthPercent = (monthTotalSpentAmount/monthTotalSpentAmountRatio)*100;
+                    int monthPercent = (int)Math.round( (monthTotalSpentAmount/monthTotalSpentAmountRatio)*100 );
                     if (monthPercent<50){
                         monthRatioSpending.setText(monthPercent+" %" +" used of "+monthTotalSpentAmountRatio + ". Status:");
                         monthRatioSpending_Image.setImageResource(R.drawable.green);
@@ -848,7 +860,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
 
 
 
-                    float transportPercent = (traTotal/traRatio)*100;
+                    int transportPercent = (int)Math.round( (traTotal/traRatio)*100 );
                     if (transportPercent<50){
                         progress_ratio_transport.setText(transportPercent+" %" +" used of "+traRatio + ". Status:");
                         status_Image_transport.setImageResource(R.drawable.green);
@@ -861,7 +873,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float foodPercent = (foodTotal/foodRatio)*100;
+                    int foodPercent = (int)Math.round( (foodTotal/foodRatio)*100 );
                     if (foodPercent<50){
                         progress_ratio_food.setText(foodPercent+" %" +" used of "+foodRatio + ". Status:");
                         status_Image_food.setImageResource(R.drawable.green);
@@ -874,7 +886,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float housePercent = (houseTotal/houseRatio)*100;
+                    int housePercent = (int)Math.round( (houseTotal/houseRatio)*100 );
                     if (housePercent<50){
                         progress_ratio_house.setText(housePercent+" %" +" used of "+houseRatio + ". Status:");
                         status_Image_house.setImageResource(R.drawable.green);
@@ -887,7 +899,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float entPercent = (entTotal/entRatio)*100;
+                    int entPercent = (int)Math.round( (entTotal/entRatio)*100 );
                     if (entPercent<50){
                         progress_ratio_ent.setText(entPercent+" %" +" used of "+entRatio + ". Status:");
                         status_Image_ent.setImageResource(R.drawable.green);
@@ -900,7 +912,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float eduPercent = (eduTotal/eduRatio)*100;
+                    int eduPercent = (int)Math.round( (eduTotal/eduRatio)*100 );
                     if (eduPercent<50){
                         progress_ratio_edu.setText(eduPercent+" %" +" used of "+eduRatio + ". Status:");
                         status_Image_edu.setImageResource(R.drawable.green);
@@ -914,7 +926,8 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float chaPercent = (chaTotal/chaRatio)*100;
+                    int chaPercent = (int)Math.round( (chaTotal/chaRatio)*100 );
+
                     if (chaPercent<50){
                         progress_ratio_cha.setText(chaPercent+" %" +" used of "+chaRatio + ". Status:");
                         status_Image_cha.setImageResource(R.drawable.green);
@@ -927,7 +940,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float appPercent = (appTotal/appRatio)*100;
+                    int appPercent = (int)Math.round( (appTotal/appRatio)*100 );
                     if (appPercent<50){
                         progress_ratio_app.setText(appPercent+" %" +" used of "+appRatio + ". Status:");
                         status_Image_app.setImageResource(R.drawable.green);
@@ -940,7 +953,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float heaPercent = (heaTotal/heaRatio)*100;
+                    int heaPercent = (int)Math.round( (heaTotal/heaRatio)*100 );
                     if (heaPercent<50){
                         progress_ratio_hea.setText(heaPercent+" %" +" used of "+heaRatio + ". Status:");
                         status_Image_hea.setImageResource(R.drawable.green);
@@ -955,7 +968,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
                     }
 
 
-                    float perPercent = (perTotal/perRatio)*100;
+                    int perPercent = (int)Math.round( (perTotal/perRatio)*100 );
                     if (perPercent<50){
                         progress_ratio_per.setText(perPercent+" %" +" used of "+perRatio + " . Status:");
                         status_Image_per.setImageResource(R.drawable.green);
@@ -969,7 +982,7 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
                     }
 
 
-                    float otherPercent = (othTotal/othRatio)*100;
+                    int otherPercent = (int)Math.round( (othTotal/othRatio)*100 );
                     if (otherPercent<50){
                         progress_ratio_oth.setText(otherPercent+" %" +" used of "+othRatio + ". Status:");
                         status_Image_oth.setImageResource(R.drawable.green);

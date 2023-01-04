@@ -3,7 +3,8 @@
     package="com.budget.personalfinancetracking">
     <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+
+
 
     <application
         android:allowBackup="true"
@@ -24,7 +25,8 @@
         <activity android:name="com.budget.personalfinancetracking.MainActivity" />
         <activity android:name="com.budget.personalfinancetracking.RegistrationActivity" />
         <activity android:name="com.budget.personalfinancetracking.LoginActivity" />
-        <activity android:name="com.budget.personalfinancetracking.SplashScreenActivity">
+        <activity android:name="com.budget.personalfinancetracking.SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

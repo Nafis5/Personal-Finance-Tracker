@@ -769,6 +769,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
                     float traRatio;
                     if (snapshot.hasChild("dayTransRatio")){
                         traRatio = Integer.parseInt(snapshot.child("dayTransRatio").getValue().toString());
+                        traRatio=(float)( Math.round(traRatio * 10) / 10.0 );
                     }else {
 
                         traRatio=0;
@@ -777,6 +778,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
                     float foodRatio;
                     if (snapshot.hasChild("dayFoodRatio")){
                         foodRatio = Integer.parseInt(snapshot.child("dayFoodRatio").getValue().toString());
+                        foodRatio=(float)( Math.round(foodRatio * 10) / 10.0 );
                     }else {
                         foodRatio = 0;
                     }
@@ -784,6 +786,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
                     float houseRatio;
                     if (snapshot.hasChild("dayHouseRatio")){
                         houseRatio = Integer.parseInt(snapshot.child("dayHouseRatio").getValue().toString());
+                        houseRatio=(float)( Math.round(houseRatio * 10) / 10.0 );
                     }else {
                         houseRatio = 0;
                     }
@@ -791,6 +794,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
                     float entRatio;
                     if (snapshot.hasChild("dayEntRatio")){
                         entRatio= Integer.parseInt(snapshot.child("dayEntRatio").getValue().toString());
+                        entRatio=(float)( Math.round(entRatio * 10) / 10.0 );
                     }else {
                         entRatio = 0;
                     }
@@ -798,6 +802,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
                     float eduRatio;
                     if (snapshot.hasChild("dayEduRatio")){
                         eduRatio= Integer.parseInt(snapshot.child("dayEduRatio").getValue().toString());
+                        eduRatio=(float)( Math.round(eduRatio * 10) / 10.0 );
                     }else {
                         eduRatio=0;
                     }
@@ -805,6 +810,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
                     float chaRatio;
                     if (snapshot.hasChild("dayCharRatio")){
                         chaRatio = Integer.parseInt(snapshot.child("dayCharRatio").getValue().toString());
+                        chaRatio=(float)( Math.round(chaRatio * 10) / 10.0 );
                     }else {
                         chaRatio = 0;
                     }
@@ -812,6 +818,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
                     float appRatio;
                     if (snapshot.hasChild("dayAppRatio")){
                         appRatio = Integer.parseInt(snapshot.child("dayAppRatio").getValue().toString());
+                        appRatio=(float)( Math.round(appRatio * 10) / 10.0 );
                     }else {
                         appRatio =0;
                     }
@@ -819,6 +826,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
                     float heaRatio;
                     if (snapshot.hasChild("dayHealthRatio")){
                         heaRatio = Integer.parseInt(snapshot.child("dayHealthRatio").getValue().toString());
+                        heaRatio=(float)( Math.round(heaRatio * 10) / 10.0 );
                     }else {
                         heaRatio=0;
                     }
@@ -826,6 +834,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
                     float perRatio;
                     if (snapshot.hasChild("dayPerRatio")){
                         perRatio = Integer.parseInt(snapshot.child("dayPerRatio").getValue().toString());
+                        perRatio=(float)( Math.round(perRatio * 10) / 10.0 );
                     }else {
                         perRatio = 0;
                     }
@@ -833,6 +842,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
                     float othRatio;
                     if (snapshot.hasChild("dayOtherRatio")){
                         othRatio = Integer.parseInt(snapshot.child("dayOtherRatio").getValue().toString());
+                        othRatio=(float)( Math.round(othRatio * 10) / 10.0 );
                     }else {
                         othRatio=0;
                     }
@@ -841,6 +851,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
                     if (snapshot.hasChild("dailyBudget")){
 
                         monthTotalSpentAmountRatio = Integer.parseInt(snapshot.child("dailyBudget").getValue().toString());
+                        monthTotalSpentAmountRatio=(float)( Math.round(monthTotalSpentAmountRatio * 10) / 10.0 );
                     }else {
                         monthTotalSpentAmountRatio =0;
                     }
@@ -849,7 +860,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
 
 
 
-                    float monthPercent = (monthTotalSpentAmount/monthTotalSpentAmountRatio)*100;
+                    int monthPercent = (int)Math.round( (monthTotalSpentAmount/monthTotalSpentAmountRatio)*100 );
 
                     if (monthPercent<50){
                         monthRatioSpending.setText(monthPercent+" %" +" used of "+monthTotalSpentAmountRatio + ". Status:");
@@ -863,7 +874,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float transportPercent = (traTotal/traRatio)*100;
+                    int transportPercent = (int)Math.round( (traTotal/traRatio)*100 );
                     if (transportPercent<50){
                         progress_ratio_transport.setText(transportPercent+" %" +" used of "+traRatio + ". Status:");
                         status_Image_transport.setImageResource(R.drawable.green);
@@ -876,7 +887,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float foodPercent = (foodTotal/foodRatio)*100;
+                    int foodPercent = (int)Math.round( (foodTotal/foodRatio)*100 );
                     if (foodPercent<50){
                         progress_ratio_food.setText(foodPercent+" %" +" used of "+foodRatio + ". Status:");
                         status_Image_food.setImageResource(R.drawable.green);
@@ -889,7 +900,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float housePercent = (houseTotal/houseRatio)*100;
+                    int housePercent = (int)Math.round( (houseTotal/houseRatio)*100 );
                     if (housePercent<50){
                         progress_ratio_house.setText(housePercent+" %" +" used of "+houseRatio + ". Status:");
                         status_Image_house.setImageResource(R.drawable.green);
@@ -902,7 +913,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float entPercent = (entTotal/entRatio)*100;
+                    int entPercent = (int)Math.round( (entTotal/entRatio)*100 );
                     if (entPercent<50){
                         progress_ratio_ent.setText(entPercent+" %" +" used of "+entRatio + ". Status:");
                         status_Image_ent.setImageResource(R.drawable.green);
@@ -915,7 +926,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float eduPercent = (eduTotal/eduRatio)*100;
+                    int eduPercent = (int)Math.round( (eduTotal/eduRatio)*100 );
                     if (eduPercent<50){
                         progress_ratio_edu.setText(eduPercent+" %" +" used of "+eduRatio + ". Status:");
                         status_Image_edu.setImageResource(R.drawable.green);
@@ -929,7 +940,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float chaPercent = (chaTotal/chaRatio)*100;
+                    int chaPercent = (int)Math.round( (chaTotal/chaRatio)*100 );
                     if (chaPercent<50){
                         progress_ratio_cha.setText(chaPercent+" %" +" used of "+chaRatio + ". Status:");
                         status_Image_cha.setImageResource(R.drawable.green);
@@ -942,7 +953,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float appPercent = (appTotal/appRatio)*100;
+                    int appPercent = (int)Math.round( (appTotal/appRatio)*100 );
                     if (appPercent<50){
                         progress_ratio_app.setText(appPercent+" %" +" used of "+appRatio + ". Status:");
                         status_Image_app.setImageResource(R.drawable.green);
@@ -955,7 +966,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
 
                     }
 
-                    float heaPercent = (heaTotal/heaRatio)*100;
+                    int heaPercent = (int)Math.round( (heaTotal/heaRatio)*100 );
                     if (heaPercent<50){
                         progress_ratio_hea.setText(heaPercent+" %" +" used of "+heaRatio + ". Status:");
                         status_Image_hea.setImageResource(R.drawable.green);
@@ -970,7 +981,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
                     }
 
 
-                    float perPercent = (perTotal/perRatio)*100;
+                    int perPercent = (int)Math.round( (perTotal/perRatio)*100 );
                     if (perPercent<50){
                         progress_ratio_per.setText(perPercent+" %" +" used of "+perRatio + " . Status:");
                         status_Image_per.setImageResource(R.drawable.green);
@@ -984,7 +995,7 @@ public class DailyAnaylyticsActivity extends AppCompatActivity {
                     }
 
 
-                    float otherPercent = (othTotal/othRatio)*100;
+                    int otherPercent = (int)Math.round( (othTotal/othRatio)*100 );
                     if (otherPercent<50){
                         progress_ratio_oth.setText(otherPercent+" %" +" used of "+othRatio + ". Status:");
                         status_Image_oth.setImageResource(R.drawable.green);
